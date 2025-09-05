@@ -4,29 +4,31 @@ import User from "../models/User";
 interface SeedPost {
   title: string;
   content: string;
+  category:string
 }
 
 const initialPosts: SeedPost[] = [
   {
     title: "Welcome to My Blog",
-    content: "This is the first post. Edit or delete it as you like!"
+    content: "This is the first post. Edit or delete it as you like!",
+    category: "General Mobile Tips",
   },
   {
     title: "React + TypeScript Setup",
-    content: "Learn how to set up a React project with TypeScript and Redux Toolkit."
+    content: "Learn how to set up a React project with TypeScript and Redux Toolkit.",
+    category: "General Mobile Tips",
   },
   {
-    title: "MERN Stack Guide",
-    content: "This is a sample post for your MERN stack blog application."
+    title: "Full Stack Guide",
+    content: "This is a sample post for your full stack blog application.",
+    category: "General Mobile Tips",
   },
   {
     title: "Getting Started with Node.js",
-    content: "Node.js is a powerful JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to build scalable network applications using JavaScript on the server side."
-  },
-  {
-    title: "Understanding MongoDB Basics",
-    content: "MongoDB is a popular NoSQL database that stores data in flexible, JSON-like documents. This post covers the fundamentals of working with MongoDB in your applications."
+    content: "Node.js is a powerful JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to build scalable network applications using JavaScript on the server side.",
+    category: "General Mobile Tips",
   }
+
 ];
 
 export const seedPosts = async () => {
