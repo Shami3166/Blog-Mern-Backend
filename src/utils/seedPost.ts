@@ -14,6 +14,11 @@ const initialPosts: SeedPost[] = [
     category: "General Mobile Tips",
   },
   {
+    title: "Welcome to My Website",
+    content: "This is the first post. Edit or delete it as you like!",
+    category: "General Mobile Tips",
+  },
+  {
     title: "React + TypeScript Setup",
     content: "Learn how to set up a React project with TypeScript and Redux Toolkit.",
     category: "General Mobile Tips",
