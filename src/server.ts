@@ -20,10 +20,12 @@ import { seedAdmin } from "./utils/seedAdmin";
 import { seedPosts } from "./utils/seedPost";
 
 // ✅ Load environment variables safely
-dotenvSafe.config({
-  allowEmptyValues: false,
-  example: ".env.example",
-});
+if (process.env.NODE_ENV !== "production") {
+  dotenvSafe.config({
+    allowEmptyValues: false, // enforce values locally
+    example: ".env.example",
+  });
+}
 
 // ✅ Cloudinary Configuration
 cloudinary.config({
@@ -48,7 +50,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // local dev
-      "https://your-frontend.vercel.app", // ✅ replace with your real Vercel domain
+      "https://your-frontend.vercel.app", // ✅ replace with your real Vercel/Render frontend domain
     ],
     credentials: true,
   })
