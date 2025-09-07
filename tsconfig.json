@@ -1,20 +1,16 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "outDir": "dist",                     // compiled .js files
-    "rootDir": "src",                     // all source files
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // ✅ Tell TS to use Node + Express types
-    "types": ["node", "express"],
-
-    // ✅ keep custom types if needed
-    "typeRoots": ["./src/types", "./node_modules/@types"]
-  },
-  "include": ["src/**/*", "src/types/**/*.d.ts"],
-  "exclude": ["node_modules", "dist"]
+"compilerOptions": {
+"target": "ES2020",
+"module": "commonjs",
+"outDir": "dist",
+"rootDir": "src",
+"strict": true,
+"esModuleInterop": true,
+"skipLibCheck": true,
+"forceConsistentCasingInFileNames": true,
+"types": ["node", "express"],
+"typeRoots": ["./src/types", "./node_modules/@types"]
+},
+"include": ["src//*", "src/types//*.d.ts"],
+"exclude": ["node_modules", "dist"]
 }
