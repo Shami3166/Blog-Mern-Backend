@@ -1,4 +1,3 @@
-// src/server.ts
 import express, { Application, Request, Response } from "express";
 import dotenvSafe from "dotenv-safe";
 import cors from "cors";
@@ -50,7 +49,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // local dev
-      "https://your-frontend.vercel.app", // ✅ replace with your real Vercel/Render frontend domain
+      "https://techguides.vercel.app", // ✅ Updated with your new Vercel domain
     ],
     credentials: true,
   })
