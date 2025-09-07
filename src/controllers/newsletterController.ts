@@ -51,7 +51,7 @@ export const subscribeNewsletter = async (req: Request, res: Response) => {
       subscription,
     });
   } catch (error) {
-    res.status(500).json( error );
+    res.status(500);
   }
 };
 
